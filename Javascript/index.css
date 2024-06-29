@@ -1,0 +1,87 @@
+body{
+    font-family: Arial,sans-serif;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main_Container{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form, .listagem_container{
+    display: none;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.form.active, .listagem_container.active{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h2{
+    margin-top: 0px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="radio"] {
+    width: calc(100% - 20px); 
+    padding: 8px;
+   
+}
+
+button{
+    background-color: #be502f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.novoButton{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.radioButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #be502f;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #be502f70;
+}
